@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap Script -->
+<!-- Latest compiled and minified CSS -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<title>Ніжинський путівник - Освіта</title>
+
+<script>
+function ScrollUp(){
+    var t,s;
+    s=document.body.scrollTop||window.pageYOffset;
+    t=setInterval(function(){if(s>0)window.scroll(0,s-=15);else clearInterval(t)},5);
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("a").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        if ($.browser.safari) {
+            $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость прокрутки
+        } else {
+            $('html').animate({ scrollTop: destination }, 1100);
+        }
+        return false; 
+    });
+});
+
+</script>
+
+</head>
+<body>
+
+	
+
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand" style="font-size: 2em;">Ніжинський путівник</a> 
+			</div>
+
+	<div>
+		<ul class="nav navbar-nav navbar-right " >
+			<li><a href="index.html">Головна</a></li>
+
+			<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Гід міста<span class="caret"></span></a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="vizitka.html">Візитка</a></li>
+    				<li><a href="index.html">Історія</a></li>
+    				<li><a href="rayoni.html">Райони</a></li>
+    				<li><a href="streets.html">Вулиці, площі</a></li>
+    				<li><a href="cult.html">Пам'ятки культури</a></li>
+    				<li><a href="turizm.html">Туризм</a></li>
+    				<li><a href="transport.html">Транспорт</a></li>
+    				<li class="active"><a href="osvita.html">Освіта</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Афіша<span class="caret"></span></a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="kino.html">Кіно</a></li>
+    				<li><a href="dosug.html">Свята та розваги</a></li>
+    				<li><a href="dosug.html">Виставки</a></li>
+    				<li><a href="dosug.html">Спортивні заходи</a></li>
+				</ul>
+			</li>
+			<li><a href="map.html">Карта міста</a></li>
+			<li><a href="kontakti.html">Контакти</a></li>
+		</ul>
+	</div>
+		</div> 
+	</nav>
+
+
+	<div class="container-fluid" style="">
+		
+	</div>
+
+
+<!--CONTENT STANDART LAYOUT-->
+<div class="container-fluid">
+	<div class="container col-sm-6" >
+
+		
+	</div>
+	
+
+	<!--STANDART THEME LAYOUT-->
+	<div class="container col-sm-3">
+		<h1 class="text-center">Карта</h1>
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD8UOpYxdzB9A3PF1kBuyS5FKaEkUUyrhM'></script><div class="container-fluid col-sm-12" style='overflow:hidden;'><div id='gmap_canvas' style='height:256px;width:343px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Google Map Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=568ab11438208e0b0141aa7bcf9962ed9e1854e3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:4,center:new google.maps.LatLng(49,32),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49,32)});infowindow = new google.maps.InfoWindow({content:'<strong>Ніжин</strong><br>пл. Франка<br>16600 Ніжин<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	</div>
+	<div class="container col-sm-3" >
+		<div class="table-responsive">
+		<table class="table-sm table-bordered table-condensed table-hover">
+			<thead>
+				<tr class="active">
+					<th>Індекси Ніжина</th>
+					<th>Вулиця відділення</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>16610</td>
+					<td>вулиця Шевченка, 128</td>
+				</tr>
+				<tr>
+					<td>16608</td>
+					<td>вулиця Березанська, 8Б</td>
+				</tr>
+				<tr>
+					<td>16606</td>
+					<td>вул. Франка, 24</td>
+				</tr>
+				<tr>
+					<td>16605</td>
+					<td>вул. Овдіївська, 99</td>
+				</tr>
+				<tr>
+					<td>16604</td>
+					<td>вул. Об'їжджа, 106А</td>
+				</tr>
+				<tr>
+					<td>16602</td>
+					<td>вулиця Графська, 2</td>
+				</tr>
+				<tr>
+					<td>16601</td>
+					<td>вул. Академіка Амосова, 14А
+					<br>вул. Вокзальна, 4
+					<br>вул. Прилуцька, 126</td>
+				</tr>
+				<tr>
+					<td>16600</td>
+					<td>площа Заньковецької, 4</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<hr style="padding: 0; margin-bottom: 0;">
+	<div>
+		<button class="btn btn-link"><a href="#botDiv"> Історія міста</a></button><br>
+		<button class="btn btn-link"><a href="vizitka.html">Промисловість</a></button><br>
+		<button class="btn btn-link"><a href="rayoni.html">Райони</a></button><br>
+		<button class="btn btn-link"><a href="transport.html">Розклад руху автобусів</a></button><br>
+	</div>
+	<a class="weatherwidget-io" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+	</div>
+</div>
+
+
+<a href="#top"
+   onclick="ScrollUp();return!1;"
+   style="display:block;
+   position:fixed;
+        bottom:30px;right:30px;
+        width:32px;height:32px;padding:3px 2px 2px;
+        text-decoration: none;
+        opacity:0.7;
+        background:#ddd;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px"><svg class="bi bi-arrow-bar-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+</svg></a>
+
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>НІЖИНСЬКИЙ ПУТІВНИК </h4>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <h3> Зв'язок з нами </h3>
+                    <ul>
+                        <li><a class="email"href="#"> example@gmail.com </a></li>
+                        <br/>
+                        <li> <p> пл. Івана Франка, 1 </p> </li>
+                        <li> <p> вул. Шевченка, 131 </p> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <ul>
+                        <li> <h5> <a href="kontakti.html" style="margin-top: 5em"> КОНТАКТИ</a> <h5></li>
+                        <li> <h5><a href="kontakti.html"> ПРО НАС </a> <h5></li>
+                        <li> <h5><a href="vizitka.html"> НАШЕ МІСТО </a> <h5></li>
+                        <li> <h5><a href="turizm.html"> КУДИ ПІТИ? </a> <h5></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+                          
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left copyright"> Copyright © Ніжинський Путівник 2020. All right reserved. </p>
+       
+        </div>
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>

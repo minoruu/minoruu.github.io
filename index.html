@@ -17,7 +17,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="css/style.css" rel="stylesheet">
-	<title>Сайт</title>
+	<title>Ніжинський путівник - Головна</title>
 
 <script>
 function ScrollUp(){
@@ -52,36 +52,36 @@ $(document).ready(function () {
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand" style="font-size: 2em;">Ніжинський путівник</a> 
+				<a href="index.html" class="navbar-brand" style="font-size: 2em;">Ніжинський путівник</a> 
 			</div>
 
 	<div>
 		<ul class="nav navbar-nav navbar-right " >
-			<li class="active"><a href="#">Головна</a></li>
+			<li class="active"><a href="index.html">Головна</a></li>
 
 			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Гід міста<span class="caret"></span></a>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Візитка</a></li>
+					<li><a href="vizitka.html">Візитка</a></li>
     				<li><a href="#botDiv">Історія</a></li>
-    				<li><a href="#">Райони</a></li>
-    				<li><a href="#">Вулиці, площі</a></li>
-    				<li><a href="#">Пам'ятки культури</a></li>
-    				<li><a href="#">Туризм</a></li>
-    				<li><a href="#">Транспорт</a></li>
-    				<li><a href="#">Освіта</a></li>
+    				<li><a href="rayoni.html">Райони</a></li>
+    				<li><a href="streets.html">Вулиці, площі</a></li>
+    				<li><a href="cult.html">Пам'ятки культури</a></li>
+    				<li><a href="turizm.html">Туризм</a></li>
+    				<li><a href="transport.html">Транспорт</a></li>
+    				<li><a href="osvita.html">Освіта</a></li>
 				</ul>
 			</li>
 
 			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Афіша<span class="caret"></span></a>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Кіно</a></li>
-    				<li><a href="#">Свята та розваги</a></li>
-    				<li><a href="#">Виставки</a></li>
-    				<li><a href="#">Спортивні заходи</a></li>
+					<li><a href="kino.html">Кіно</a></li>
+    				<li><a href="dosug.html">Свята та розваги</a></li>
+    				<li><a href="dosug.html">Виставки</a></li>
+    				<li><a href="dosug.html">Спортивні заходи</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Карта міста</a></li>
-			<li><a href="#">Контакти</a></li>
+			<li><a href="map.html">Карта міста</a></li>
+			<li><a href="kontakti.html">Контакти</a></li>
 		</ul>
 	</div>
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
 				<div class="container col-md-4"></div>
 				<div class="container col-md-4">
 					<div class="button_m">
-						<a href="" class="text-center">Про місто</a>
+						<a href="vizitka.html" class="text-center">Про місто</a>
 					</div>
 				</div>
 				<div class="container col-md-4"></div>
@@ -147,7 +147,7 @@ $(document).ready(function () {
 	
 	<div class="container col-sm-3">
 		<h1 class="text-center">Карта</h1>
-		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD8UOpYxdzB9A3PF1kBuyS5FKaEkUUyrhM'></script><div style='overflow:hidden;height:256px;width:343px;'><div id='gmap_canvas' style='height:256px;width:343px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Google Map Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=568ab11438208e0b0141aa7bcf9962ed9e1854e3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:4,center:new google.maps.LatLng(49,32),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49,32)});infowindow = new google.maps.InfoWindow({content:'<strong>Ніжин</strong><br>пл. Франка<br>16600 Ніжин<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD8UOpYxdzB9A3PF1kBuyS5FKaEkUUyrhM'></script><div class="container-fluid col-sm-12" style='overflow:hidden;'><div id='gmap_canvas' style='height:256px;width:343px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Google Map Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=568ab11438208e0b0141aa7bcf9962ed9e1854e3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:4,center:new google.maps.LatLng(49,32),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49,32)});infowindow = new google.maps.InfoWindow({content:'<strong>Ніжин</strong><br>пл. Франка<br>16600 Ніжин<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 	</div>
 	<div class="container col-sm-3" >
 		<div class="table-responsive">
@@ -198,8 +198,10 @@ $(document).ready(function () {
 	</div>
 	<hr style="padding: 0; margin-bottom: 0;">
 	<div>
-		<button class="btn btn-link">Історія міста</button><br>
-		<button class="btn btn-link">Промисловість</button>
+		<button class="btn btn-link"><a href="#botDiv"> Історія міста</a></button><br>
+		<button class="btn btn-link"><a href="vizitka.html">Промисловість</a></button><br>
+		<button class="btn btn-link"><a href="rayoni.html">Райони</a></button><br>
+		<button class="btn btn-link"><a href="transport.html">Розклад руху автобусів</a></button><br>
 	</div>
 	<a class="weatherwidget-io" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
 <script>
@@ -225,7 +227,46 @@ $(document).ready(function () {
   <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
 </svg></a>
 
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>НІЖИНСЬКИЙ ПУТІВНИК </h4>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <h3> Зв'язок з нами </h3>
+                    <ul>
+                        <li><a class="email"href="#"> example@gmail.com </a></li>
+                        <br/>
+                        <li> <p> пл. Івана Франка, 1 </p> </li>
+                        <li> <p> вул. Шевченка, 131 </p> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <ul>
+                        <li> <h5> <a href="kontakti.html" style="margin-top: 5em"> КОНТАКТИ</a> <h5></li>
+                        <li> <h5><a href="kontakti.html"> ПРО НАС </a> <h5></li>
+                        <li> <h5><a href="vizitka.html"> НАШЕ МІСТО </a> <h5></li>
+                        <li> <h5><a href="turizm.html"> КУДИ ПІТИ? </a> <h5></li>
+                    </ul>
+                </div>
+               
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+                          
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left copyright"> Copyright © Ніжинський Путівник 2020. All right reserved. </p>
+       
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
 
+</footer>
 	<!--
 
 		<button class="btn btn-default">Про місто</button>

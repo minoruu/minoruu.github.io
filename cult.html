@@ -104,7 +104,13 @@ $(document).ready(function () {
 	<!--STANDART THEME LAYOUT-->
 	<div class="container col-sm-3">
 		<h1 class="text-center">Карта</h1>
-		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD8UOpYxdzB9A3PF1kBuyS5FKaEkUUyrhM'></script><div class="container-fluid col-sm-12" style='overflow:hidden;'><div id='gmap_canvas' style='height:256px;width:343px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Google Map Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=568ab11438208e0b0141aa7bcf9962ed9e1854e3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:4,center:new google.maps.LatLng(49,32),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49,32)});infowindow = new google.maps.InfoWindow({content:'<strong>Ніжин</strong><br>пл. Франка<br>16600 Ніжин<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		<!--Google map-->
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
 	</div>
 	<div class="container col-sm-3" >
 		<div class="table-responsive">
@@ -189,7 +195,7 @@ $(document).ready(function () {
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h4>НІЖИНСЬКИЙ ПУТІВНИК </h4>
+                    <h4>НIЖИНСЬКИЙ ПУТIВНИК </h4>
                 </div>
                 <div class="col-lg-3 col-sm-2 col-xs-3">
                     <h3> Зв'язок з нами </h3>

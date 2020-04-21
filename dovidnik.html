@@ -81,8 +81,8 @@ $(document).ready(function () {
 				</ul>
 			</li>
 			<li><a href="map.html">Карта міста</a></li>
-			<li><a href="dovidnik.html">Телефонний довідник</a></li>
-			<li class="active"><a href="kontakti.html">Контакти</a></li>
+			<li class="active"><a href="dovidnik.html"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true" style="margin-right: 5px;"></span>Телефонний довідник</a></li>
+			<li><a href="kontakti.html">Контакти</a></li>
 		</ul>
 	</div>
 		</div> 
@@ -97,14 +97,14 @@ $(document).ready(function () {
 <!--CONTENT STANDART LAYOUT-->
 <div class="container-fluid">
 	<div class="container col-sm-6" style="background-color: #F8F8FF">
-		<h1 class="text-info">Контакти</h1><hr style="margin: 0;">
+		<h1 class="text-info"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true" style="margin-right: 5px;"></span>Контакти</h1><hr style="margin: 0;">
 		<h5>Телефонний звязок: код міста <strong>04631</strong></h5>
 
 		<div class="table-responsive" style="margin-top: 5%;">
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Телефони екстренного виклику</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Телефони екстренного виклику</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -141,10 +141,11 @@ $(document).ready(function () {
 	</div>
 
 <div class="table-responsive" style="margin-top: 5%;">
+
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Довідково-інформаційні служби</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Довідково-інформаційні служби</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -184,7 +185,7 @@ $(document).ready(function () {
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Медична допомога</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Медична допомога</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -217,7 +218,7 @@ $(document).ready(function () {
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Комунальні служби</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Комунальні служби</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -257,7 +258,7 @@ $(document).ready(function () {
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Послуги звязку</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Послуги звязку</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -282,25 +283,12 @@ $(document).ready(function () {
 		</table>
 	</div>
 
-	<h2 class="text-info">Зв'язок з нами:</h2>
-		<hr style="margin: 0;">
-		<h5><strong>Ми знаходимоя за адресою:</strong> пл. Івана Франка, 1</h5>
-		<h5><strong>Телевони для довідок:</strong>(068) 384-47-27, (096) 847-23-23</h5>
-		<h5><strong>Пошта:</strong> example@gmail.com</h5>
+	
 	</div>
 	
 
 	<!--STANDART THEME LAYOUT-->
-	<div class="container col-sm-3">
-		<h1 class="text-center">Карта</h1>
-		<!--Google map-->
-<div id="map-container-google-3" class="z-depth-1-half map-container-3">
-  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-    style="border:0" allowfullscreen></iframe>
-</div>
 
-<!--Google Maps-->
-	</div>
 	<div class="container col-sm-3" >
 		<div class="table-responsive">
 		<table class="table-sm table-bordered table-condensed table-hover">
@@ -355,10 +343,21 @@ $(document).ready(function () {
 		<button class="btn btn-link"><a href="rayoni.html">Райони</a></button><br>
 		<button class="btn btn-link"><a href="transport.html">Розклад руху автобусів</a></button><br>
 	</div>
-	<a class="weatherwidget-io" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
+	
+	</div>
+	<div class="container col-sm-3">
+		<h1 class="text-center"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 5px;"></span>Карта</h1>
+		<!--Google map-->
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+<a class="weatherwidget-io" style="margin-top: 5%;" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+
+<!--Google Maps-->
 	</div>
 </div>
 
@@ -389,7 +388,7 @@ $(document).ready(function () {
                 <div class="col-lg-3 col-sm-2 col-xs-3">
                     <h3> Зв'язок з нами </h3>
                     <ul>
-                        <li><a class="email"href="#"> example@gmail.com </a></li>
+                        <li><a class="email"href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true" style="margin-right: 5px;"></span>example@gmail.com </a></li>
                         <br/>
                         <li> <p> пл. Івана Франка, 1 </p> </li>
                         <li> <p> вул. Шевченка, 131 </p> </li>

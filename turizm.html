@@ -59,7 +59,7 @@ $(document).ready(function () {
 		<ul class="nav navbar-nav navbar-right " >
 			<li><a href="index.html">Головна</a></li>
 
-			<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Гід міста<span class="caret"></span></a>
+			<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-send" aria-hidden="true" style="margin-right: 5px;"></span>Гід міста<span class="caret"></span></a>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 					<li><a href="vizitka.html">Візитка</a></li>
     				<li><a href="index.html">Історія</a></li>
@@ -81,6 +81,7 @@ $(document).ready(function () {
 				</ul>
 			</li>
 			<li><a href="map.html">Карта міста</a></li>
+			<li><a href="dovidnik.html">Телефонний довідник</a></li>
 			<li><a href="kontakti.html">Контакти</a></li>
 		</ul>
 	</div>
@@ -214,59 +215,82 @@ $(document).ready(function () {
 	
 
 	<!--STANDART THEME LAYOUT-->
-	<div class="container col-sm-3">
-		<h1 class="text-center">Карта</h1>
-		<!--Google map-->
-<div id="map-container-google-3" class="z-depth-1-half map-container-3">
-  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-    style="border:0" allowfullscreen></iframe>
-</div>
-
-<!--Google Maps-->
-	</div>
+	
 	<div class="container col-sm-3" >
-		<div class="table-responsive">
+		<div class="table-responsive" style="margin-top: 5%;">
 		<table class="table-sm table-bordered table-condensed table-hover">
 			<thead>
 				<tr class="active">
-					<th>Індекси Ніжина</th>
-					<th>Вулиця відділення</th>
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Комунальні служби</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>16610</td>
-					<td>вулиця Шевченка, 128</td>
+					<td>Ніжинський РЕМ</td>
+					<td>7-11-14, 3-10-16</td>
 				</tr>
 				<tr>
-					<td>16608</td>
-					<td>вулиця Березанська, 8Б</td>
+					<td>Комунальне підприємство «ЖЕК» «Північна»</td>
+					<td>4-23-98</td>
 				</tr>
 				<tr>
-					<td>16606</td>
-					<td>вул. Франка, 24</td>
+					<td>Комунальне підприємство "Служба єдиного замовника"</td>
+					<td>2-25-08</td>
 				</tr>
 				<tr>
-					<td>16605</td>
-					<td>вул. Овдіївська, 99</td>
+					<td>Комунальне підприємство Житлово-експлуатаційна контора "Південна"</td>
+					<td>2-64-00</td>
 				</tr>
 				<tr>
-					<td>16604</td>
-					<td>вул. Об'їжджа, 106А</td>
+					<td>НіжинТеплоМережі</td>
+					<td>7-11-97</td>
 				</tr>
 				<tr>
-					<td>16602</td>
-					<td>вулиця Графська, 2</td>
+					<td>Газова служба</td>
+					<td>104, 2-50-27</td>
 				</tr>
 				<tr>
-					<td>16601</td>
-					<td>вул. Академіка Амосова, 14А
-					<br>вул. Вокзальна, 4
-					<br>вул. Прилуцька, 126</td>
+					<td>Управління водопровідно-каналізаційного господарства</td>
+					<td>2-33-09</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="table-responsive" style="margin-top: 5%;">
+		<table class="table-sm table-bordered table-condensed table-hover">
+			<thead>
+				<tr class="active">
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Довідково-інформаційні служби</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Служба точного часу</td>
+					<td>121</td>
 				</tr>
 				<tr>
-					<td>16600</td>
-					<td>площа Заньковецької, 4</td>
+					<td>Залізничний вокзал</td>
+					<td>92-3-65, 92-2-00</td>
+				</tr>
+				<tr>
+					<td>Автовокзал </td>
+					<td>3-12-11</td>
+				</tr>
+				<tr>
+					<td>Довідкове бюро залізничного вокзалу</td>
+					<td>73-94</td>
+				</tr>
+				<tr>
+					<td>Головне відділення "Укрпошти"</td>
+					<td>54-4-76</td>
+				</tr>
+				<tr>
+					<td>Виконком</td>
+					<td>7-19-11</td>
+				</tr>
+				<tr>
+					<td>РАГС</td>
+					<td>2-22-70, 5-49-66 </td>
 				</tr>
 			</tbody>
 		</table>
@@ -278,10 +302,21 @@ $(document).ready(function () {
 		<button class="btn btn-link"><a href="rayoni.html">Райони</a></button><br>
 		<button class="btn btn-link"><a href="transport.html">Розклад руху автобусів</a></button><br>
 	</div>
-	<a class="weatherwidget-io" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
+	
+	</div>
+	<div class="container col-sm-3">
+		<h1 class="text-center"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 5px;">Карта</h1>
+		<!--Google map-->
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+<a class="weatherwidget-io" style="margin-top: 5%;" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+
+<!--Google Maps-->
 	</div>
 </div>
 

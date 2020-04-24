@@ -89,22 +89,267 @@ $(document).ready(function () {
 	</nav>
 
 
+	<div class="container-fluid" style="">
+		
+	</div>
+
+
 <!--CONTENT STANDART LAYOUT-->
 <div class="container-fluid">
-<div id="map-container-google-3" class="z-depth-1-half map-container-3">
-  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-    style="border:0" allowfullscreen></iframe>
+	<div class="container col-sm-6" style="background-color: #F8F8FF">
+		<h1 class="text-info"><span class="glyphicon glyphicon-globe" aria-hidden="true" style="margin-right: 5px;"></span>Місто Ніжин на картах</h1>
+		<hr style="margin: 0;">
+		  <div class="container-fluid col-sm-12" style="background-color: #EAECEE; border: .5px solid #D5D8DC;">
+        <form class="form-inline" role="form">
+            <div class="input-group">
+                <div class="form-group">
+                    <h5>Карта Ніжина. Карта Google:</h5>				
+                </div>
+                <div class="form-group">
+                    <a href="map-1.html" class="btn btn-link mb-2">Переглянути на весь екран</a>
+                </div>
+                <div class="form-group">
+               	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegular">Відкрити у вікні</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="container-fluid col-sm-12" style="background-color: #EAECEE; border: .5px solid #D5D8DC;">
+        <form class="form-inline" role="form">
+            <div class="input-group">
+                <div class="form-group">
+                    <h5>Карта Ніжина. Туристична карта:</h5>				
+                </div>
+                <div class="form-group" >
+                    <a href="map-2.html" class="btn btn-link mb-2">Переглянути на весь екран</a>
+                </div>
+               
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="container-fluid col-sm-12" style="background-color: #EAECEE; border: .5px solid #D5D8DC;">
+        <form class="form-inline" role="form">
+            <div class="input-group">
+                <div class="form-group">
+                    <h5>Карта Ніжина. Openstreet карта:</h5>				
+                </div>
+                <div class="form-group" >
+                    <a href="map-3.html" class="btn btn-link mb-2">Переглянути на весь екран</a>
+                </div>
+               <div class="form-group">
+               	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalCustom">Відкрити у вікні</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="text-center">
+
 </div>
 
-	<div class="container col-sm-6" >
-		<h4 class="text-info">Туристична карта</h4>
+<!--Modal: Name-->
+<div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <!--Google map-->
+        <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Закрити<i class="fas fa-times ml-1"></i></button>
+      </div>
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: Name-->
+
+<!--Modal: Name-->
+<div class="modal fade" id="modalSatellite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <!--Google map-->
+        <div id="map-container-google-17" class="z-depth-1-half map-container-10" style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=nizhyn&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-outline-default btn-md" data-dismiss="modal">Закрити<i class="fas fa-times ml-1"></i></button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: Name-->
+
+<!--Modal: Name-->
+<div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <!--Google map-->
+        <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=nizhyn&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Закрити<i class="fas fa-times ml-1"></i></button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: Name-->
 	</div>
 	
 
 	<!--STANDART THEME LAYOUT-->
-	<img src="nezhin-karta.jpg" width="100%">
-	<a href="https://ibb.co/HC9GFhh" class="btn btn-link"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="margin-right: 5px;"></span>Завантажити JPG</a>
+	
+	<div class="container col-sm-3" >
+		<div class="table-responsive" style="margin-top: 5%;">
+		<table class="table-sm table-bordered table-condensed table-hover">
+			<thead>
+				<tr class="active">
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Комунальні служби</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ніжинський РЕМ</td>
+					<td>7-11-14, 3-10-16</td>
+				</tr>
+				<tr>
+					<td>Комунальне підприємство «ЖЕК» «Північна»</td>
+					<td>4-23-98</td>
+				</tr>
+				<tr>
+					<td>Комунальне підприємство "Служба єдиного замовника"</td>
+					<td>2-25-08</td>
+				</tr>
+				<tr>
+					<td>Комунальне підприємство Житлово-експлуатаційна контора "Південна"</td>
+					<td>2-64-00</td>
+				</tr>
+				<tr>
+					<td>НіжинТеплоМережі</td>
+					<td>7-11-97</td>
+				</tr>
+				<tr>
+					<td>Газова служба</td>
+					<td>104, 2-50-27</td>
+				</tr>
+				<tr>
+					<td>Управління водопровідно-каналізаційного господарства</td>
+					<td>2-33-09</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="table-responsive" style="margin-top: 5%;">
+		<table class="table-sm table-bordered table-condensed table-hover">
+			<thead>
+				<tr class="active">
+					<th><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right: 5px;"></span>Довідково-інформаційні служби</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Служба точного часу</td>
+					<td>121</td>
+				</tr>
+				<tr>
+					<td>Залізничний вокзал</td>
+					<td>92-3-65, 92-2-00</td>
+				</tr>
+				<tr>
+					<td>Автовокзал </td>
+					<td>3-12-11</td>
+				</tr>
+				<tr>
+					<td>Довідкове бюро залізничного вокзалу</td>
+					<td>73-94</td>
+				</tr>
+				<tr>
+					<td>Головне відділення "Укрпошти"</td>
+					<td>54-4-76</td>
+				</tr>
+				<tr>
+					<td>Виконком</td>
+					<td>7-19-11</td>
+				</tr>
+				<tr>
+					<td>РАГС</td>
+					<td>2-22-70, 5-49-66 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<hr style="padding: 0; margin-bottom: 0;">
+	<div>
+		<button class="btn btn-link"><a href="#botDiv"> Історія міста</a></button><br>
+		<button class="btn btn-link"><a href="vizitka.html">Промисловість</a></button><br>
+		<button class="btn btn-link"><a href="rayoni.html">Райони</a></button><br>
+		<button class="btn btn-link"><a href="transport.html">Розклад руху автобусів</a></button><br>
+	</div>
+	
+	</div>
+	<div class="container col-sm-3">
+		<h1 class="text-center"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 5px;"></span>Карта</h1>
+		<!--Google map-->
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=nizhyn&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
 </div>
+<a class="weatherwidget-io" style="margin-top: 5%;" href="https://forecast7.com/uk/51d0431d89/nizhyn/" data-label_1="НІЖИН" data-label_2="ПОГОДА" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >НІЖИН ПОГОДА</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<!--Google Maps-->
+	</div>
+</div>
+
 
 <a href="#top"
    onclick="ScrollUp();return!1;"

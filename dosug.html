@@ -13,7 +13,8 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<script src="js/clock.js"></script>
+<script src="js/calendar.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="css/style.css" rel="stylesheet">
@@ -306,7 +307,24 @@ $(document).ready(function () {
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+<div class="container-fluid col-sm-12" id="timedate">
+    <a id="mon">January</a>
+    <a id="d">1</a>,
+    <a id="y">0</a><br />
+    <a id="h">12</a> :
+    <a id="m">00</a>:
+    <a id="s">00</a>
+  </div>
 
+<div class="calendar calendar-first" id="calendar_first">
+    <div class="calendar_header">
+        <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+         <h2></h2>
+        <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+    </div>
+    <div class="calendar_weekdays"></div>
+    <div class="calendar_content"></div>
+</div>
 <!--Google Maps-->
 	</div>
 </div>

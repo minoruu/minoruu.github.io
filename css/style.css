@@ -1,8 +1,13 @@
 body{
 }
 
+#conten{
+  margin-top: 5em;
+}
+
 .priv h1{
   color: white;
+
   margin-top: 10%;
   text-shadow: 1px 1px 2px black, .1em 0 0em black;
 }
@@ -204,4 +209,108 @@ a{
 li>a:hover{
   transform: scale(1.05);
   -webkit-transition: transform .3s ease-in-out;
+}
+
+#timedate {
+  font: small-caps lighter 35px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, bold;
+  text-align:left;
+  color:#fff;
+  border-left: 3px solid #2F4F4F;
+  padding: 20px;
+  background-color: #A9A9A9;
+}
+
+#timedate a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+#h,#m,#s{
+  font-weight: 700;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Muli:400, 300);
+
+#timedate{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar, .calendar_weekdays, .calendar_content {
+    max-width: 300px;
+}
+.calendar {
+    margin: auto;
+    font-family:'Muli', sans-serif;
+    font-weight: 400;
+}
+.calendar_content, .calendar_weekdays, .calendar_header {
+    position: relative;
+    overflow: hidden;
+}
+.calendar_weekdays div {
+    display:inline-block;
+    vertical-align:top;
+}
+.calendar_weekdays div, .calendar_content div {
+    width: 14.28571%;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+.calendar_content div {
+    border: 1px solid transparent;
+    float: left;
+}
+.calendar_content div:hover {
+    border: 1px solid #dcdcdc;
+    cursor: default;
+}
+.calendar_content div.blank:hover {
+    cursor: default;
+    border: 1px solid transparent;
+}
+.calendar_content div.past-date {
+    color: #d5d5d5;
+}
+.calendar_content div.today {
+    font-weight: bold;
+    font-size: 14px;
+    color: #87b633;
+    border: 1px solid #dcdcdc;
+}
+.calendar_content div.selected {
+    background-color: #f0f0f0;
+}
+.calendar_header {
+    width: 100%;
+    text-align: center;
+}
+.calendar_header h2 {
+    padding: 0 10px;
+    font-family:'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #87b633;
+    float:left;
+    width:70%;
+    margin: 0 0 10px;
+}
+button.switch-month {
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: #dcdcdc;
+    float: left;
+    width:15%;
+    transition: color .2s;
+}
+button.switch-month:hover {
+    color: #87b633;
 }

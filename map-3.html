@@ -49,53 +49,55 @@ $(document).ready(function () {
 	
 
 
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand" style="font-size: 2em;">Ніжинський путівник</a> 
-			</div>
-
-	<div>
-		<ul class="nav navbar-nav navbar-right " >
-			<li><a href="index.html">Головна</a></li>
-
-			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Гід міста<span class="caret"></span></a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="vizitka.html">Візитка</a></li>
-    				<li><a href="index.html">Історія</a></li>
-    				<li><a href="rayoni.html">Райони</a></li>
-    				<li><a href="streets.html">Вулиці, площі</a></li>
-    				<li><a href="cult.html">Пам'ятки культури</a></li>
-    				<li><a href="turizm.html">Туризм</a></li>
-    				<li><a href="transport.html">Транспорт</a></li>
-    				<li><a href="osvita.html">Освіта</a></li>
-				</ul>
-			</li>
-
-			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Афіша<span class="caret"></span></a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="kino.html">Кіно</a></li>
-    				<li><a href="dosug.html">Свята та розваги</a></li>
-    				<li><a href="dosug.html">Виставки</a></li>
-    				<li><a href="dosug.html">Спортивні заходи</a></li>
-				</ul>
-			</li>
-			<li class="active"><a href="map.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 5px;"></span>Карта міста</a></li>
-			<li><a href="dovidnik.html">Телефонний довідник</a></li>
-			<li><a href="kontakti.html">Контакти</a></li>
-		</ul>
-	</div>
-		</div> 
-	</nav>
-
-
-	<div class="container-fluid" style="">
-		
-	</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ніжинський путівник</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="">Головна</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Гід міста<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="vizitka.html">Візитка</a></li>
+                <li><a href="index.html">Історія</a></li>
+                <li><a href="osvita.html">Освіта</a></li>
+                <li><a href="transport.html">Транспорт</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Ніжин туристичний</li>
+                <li><a href="cult.html">Пам'ятки культури</a></li>
+                <li><a href="turizm.html">Туризм</a></li>
+                <li><a href="streets.html">Вулиці, площі</a></li>
+                <li><a href="rayoni.html">Райони</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Афіша<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="kino.html">Кіно</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Дозвілля</li>
+                <li><a href="dosug.html">Свята та розваги</a></li>
+                <li><a href="dosug.html">Виставки</a></li>
+                <li><a href="dosug.html">Спортивні заходи</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="map.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 5px;"></span>Карта міста</a></li>
+            <li><a href="dovidnik.html">Телефонний довідник</a></li>
+            <li><a href="kontakti.html">Контакти</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 
 <!--CONTENT STANDART LAYOUT-->
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 5em;">
    <div id="map-container-google-2" class="z-depth-1-half map-container-3">
   <iframe src="https://maps.google.com/maps?q=nizhyn&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
     style="border:0" allowfullscreen></iframe>

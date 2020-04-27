@@ -47,51 +47,65 @@ $(document).ready(function () {
 <body>
 
 	
-
-
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand" style="font-size: 2em;">Ніжинський путівник</a> 
+<div class="container-fluid" id="hover" style=" background: url('header.jpg');background-position: center; background-size: cover; background-repeat: no-repeat; height: auto; background-attachment: fixed; padding: 0; box-shadow: 0px 0px 16px 5px #000000 inset; ">
+		<div class="container col-lg-12">
+			<div class="priv">
+			<h1 class="text-center" style=""></h1>
+			<br><br><br><br><br>
+			<div class="row ">
+				<div class="container col-md-4"></div>
+				<div class="container col-md-4" ></div>
+				<div class="container col-md-4"></div>
 			</div>
+		</div>
+		</div>
+</div>
 
-	<div>
-		<ul class="nav navbar-nav navbar-right " >
-			<li><a href="index.html">Головна</a></li>
-
-			<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-send" aria-hidden="true" style="margin-right: 5px;"></span>Гід міста<span class="caret"></span></a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="vizitka.html">Візитка</a></li>
-    				<li><a href="index.html">Історія</a></li>
-    				<li><a href="rayoni.html">Райони</a></li>
-    				<li><a href="streets.html">Вулиці, площі</a></li>
-    				<li><a href="cult.html">Пам'ятки культури</a></li>
-    				<li><a href="turizm.html">Туризм</a></li>
-    				<li class="active"><a href="transport.html">Транспорт</a></li>
-    				<li><a href="osvita.html">Освіта</a></li>
-				</ul>
-			</li>
-
-			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Афіша<span class="caret"></span></a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="kino.html">Кіно</a></li>
-    				<li><a href="dosug.html">Свята та розваги</a></li>
-    				<li><a href="dosug.html">Виставки</a></li>
-    				<li><a href="dosug.html">Спортивні заходи</a></li>
-				</ul>
-			</li>
-			<li><a href="map.html">Карта міста</a></li>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ніжинський путівник</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="">Головна</a></li>
+            <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-send" aria-hidden="true" style="margin-right: 5px;"></span>Гід міста<span class="caret"></span></a>
+            	<ul class="dropdown-menu">
+            	<li><a href="vizitka.html">Візитка</a></li>
+                <li><a href="index.html">Історія</a></li>
+                <li><a href="osvita.html">Освіта</a></li>
+                <li class="active"><a href="transport.html">Транспорт</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Ніжин туристичний</li>
+                <li><a href="cult.html">Пам'ятки культури</a></li>
+                <li><a href="turizm.html">Туризм</a></li>
+                <li><a href="streets.html">Вулиці, площі</a></li>
+                <li><a href="rayoni.html">Райони</a></li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Афіша<span class="caret"></span></a>
+            	<ul class="dropdown-menu">
+            	<li><a href="kino.html">Кіно</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Дозвілля</li>
+                <li><a href="dosug.html">Свята та розваги</a></li>
+                <li><a href="dosug.html">Виставки</a></li>
+                <li><a href="dosug.html">Спортивні заходи</a></li>
+                </ul>
+            </li>
+            <li><a href="map.html">Карта міста</a></li>
 			<li><a href="dovidnik.html">Телефонний довідник</a></li>
 			<li><a href="kontakti.html">Контакти</a></li>
-		</ul>
-	</div>
-		</div> 
-	</nav>
-
-
-	<div class="container-fluid" style="">
-		
-	</div>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 
 <!--CONTENT STANDART LAYOUT-->
@@ -778,7 +792,19 @@ $(document).ready(function () {
 	</div>
 </div>
 
-
+<div class="container-fluid" id="hover" style=" background: url('header.jpg');background-position: center; background-size: cover; background-repeat: no-repeat; height: auto; background-attachment: fixed; padding: 0; box-shadow: 0px 0px 16px 5px #000000 inset; ">
+		<div class="container col-lg-12">
+			<div class="priv">
+			<h1 class="text-center" style=""></h1>
+			<br><br><br><br><br>
+			<div class="row ">
+				<div class="container col-md-4"></div>
+				<div class="container col-md-4" ></div>
+				<div class="container col-md-4"></div>
+			</div>
+		</div>
+		</div>
+</div>
 <a href="#top"
    onclick="ScrollUp();return!1;"
    style="display:block;
@@ -790,7 +816,7 @@ $(document).ready(function () {
         background:#ddd;
         -webkit-border-radius:15px;
         -moz-border-radius:15px;
-        border-radius:15px"><svg class="bi bi-arrow-bar-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        border-radius:15px"><svg class="bi bi-arrow-bar-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="https://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
   <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
 </svg></a>

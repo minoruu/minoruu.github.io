@@ -225,13 +225,13 @@ $(document).ready(function () {
         "ЛИСТОПАД",
         "ГРУДЕНЬ"];
     var daysArray = [
-        "НЕДІЛЯ",
-        "ПОНЕІЛОК",
-        "ВІВТОРОК",
-        "СЕРЕДА",
-        "ЧЕТВЕРГ",
-        "П'ЯТНИЦЯ",
-        "СУБОТА"];
+        "НД",
+        "ПН",
+        "ВТ",
+        "СР",
+        "ЧТ",
+        "ПТ",
+        "СБ"];
 
     var cal1 = $("#calendar_first");
     var calHeader1 = cal1.find(".calendar_header");

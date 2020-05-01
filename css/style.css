@@ -1,6 +1,13 @@
 body{
 }
 
+.btn-link a:hover{
+padding: 0em .4em 0em;
+transition: 0.2s;
+}
+.btn-link a{
+transition: 0.1s;
+}
 #conten{
   margin-top: 5em;
 }
@@ -18,10 +25,11 @@ body{
 }
 .button_m>a:hover{
   padding: 1.1em 2.7em 1.1em;
-  transition-duration: 0.4s;
+  transition: 0.4s;
   font-size: 1.7em;
   background-color: #fff;
   color: black;
+  
 }
 .button_m>a{
 color: white;
@@ -29,8 +37,9 @@ font-size: 1.5em;
 text-decoration: none;
 border: 2px solid #fff;
 padding: 1em 2em 1em;
-transition-duration: 0.4s;
+transition: 0.2s;
 }
+
 
 .full {
     width: 100%;    
@@ -314,3 +323,4 @@ button.switch-month {
 button.switch-month:hover {
     color: #87b633;
 }
+

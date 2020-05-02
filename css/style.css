@@ -50,10 +50,10 @@ transition: 0.1s;
 
 @keyframes scaling {   
   0% {     
-    font-size: 1.5em;   
+    font-size: 1.3em;   
   }   
   50% {     
-    font-size: 1.6em;
+    font-size: 1.5em;
   } 
   100% {
     font-size: 1.3em; 
@@ -89,6 +89,7 @@ animation: but 2s ease 1;
 @keyframes but {   
   0%{
     opacity: 0%;
+    margin-left: 10em;
   }
   10%{
 

@@ -45,7 +45,7 @@ transition: 0.1s;
 
 
 .navbar-brand{
-    animation: scaling 4s ease infinite; 
+    animation: scaling 4s ease 1; 
 }
 
 @keyframes scaling {   

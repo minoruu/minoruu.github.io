@@ -94,7 +94,7 @@ animation: but 2s ease 1;
   filter:alpha(opacity=0);
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
     opacity: 0;
-    margin-left: 10em;
+    margin-left: 6em;
   }
   10%{
 
@@ -113,7 +113,7 @@ animation: but 2s ease 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);       
     opacity: 0; 
 
-    margin-left: 10em;
+    margin-left: 6em;
   }   
   50% {
   -khtml-opacity:1; 

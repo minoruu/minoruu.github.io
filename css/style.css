@@ -50,13 +50,13 @@ transition: 0.1s;
 
 @keyframes scaling {   
   0% {     
-    font-size: 2.0em   
+    font-size: 1.8em   
   }   
   50% {     
-    font-size: 2.1em    
+    font-size: 2em    
   } 
   100% {
-    font-size: 2.0em  
+    font-size: 1.8em  
    }
 }
 
